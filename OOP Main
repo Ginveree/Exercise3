@@ -1,0 +1,28 @@
+package Exercise3;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Book bigBookShop = new Book();
+		
+		System.out.println("**********Big Book Shop**********");
+		System.out.println("Genre: " + bigBookShop.genre);
+		System.out.println("Name: " + bigBookShop.name);
+		System.out.println("Page: " + bigBookShop.page + " pages");
+		System.out.printf("%s%.2f\n","Price: RM ",bigBookShop.price);
+		System.out.println("E-book: " + bigBookShop.eBook);
+		System.out.println("Quantity sold: " + bigBookShop.qSold + " books");
+		
+		Book bookalicious = new Book("Horror","Nightfall",356,283.50,'Y',1033);
+		
+		System.out.println("\n**********Bookalicious**********");
+		System.out.println("Genre: " + bookalicious.genre);
+		System.out.println("Name: " + bookalicious.name);
+		System.out.println("Page: " + bookalicious.page + " pages");
+		System.out.printf("%s%.2f\n","Price: RM ",bookalicious.price);
+		System.out.println("E-book: " + bookalicious.eBook);
+		System.out.println("Quantity sold: " + bookalicious.qSold + " books");
+	}
+
+}
