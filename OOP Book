@@ -1,0 +1,36 @@
+package Exercise3;
+import java.util.Scanner;
+public class Book {
+	Scanner sc = new Scanner(System.in);
+	String genre, name;
+	double price;
+	char eBook;
+	int qSold, page;
+	
+	//default contructor
+	Book() {
+		System.out.print("Genre: ");
+		this.genre = sc.next()+ sc.nextLine();
+		System.out.print("Name of book: ");
+		this.name = sc.nextLine();
+		System.out.print("Page: ");
+		this.page = sc.nextInt();
+		System.out.print("Price: ");
+		this.price = sc.nextDouble();
+		System.out.print("E-book(Y/N): ");
+		this.eBook = sc.next().charAt(0);
+		System.out.print("Quantity sold: ");
+		this.qSold = sc.nextInt();
+	}
+	
+	//parameterized constructor
+	Book(String g, String n, int pg, double p, char eB, int q) {
+		this.genre = g;
+		this.name = n;
+		this.page = pg;
+		this.price = p;
+		this.eBook = eB;
+		this.qSold = q;
+	}
+
+}
